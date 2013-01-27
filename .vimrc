@@ -2,7 +2,7 @@ set nocompatible
 filetype on
 filetype plugin on
 filetype plugin indent on
-let fortran_free_source=1
+"let fortran_free_source=1
 syntax enable
 set expandtab
 set smarttab
