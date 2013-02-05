@@ -1,5 +1,3 @@
-alias ls='ls --color=auto'
-declare -x PS1="\h:\W \u\$ "
-if [ -s .profile_local ]; then
-  . .profile_local
+if [ -s .bashrc ]; then
+  . .bashrc
 fi
