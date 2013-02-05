@@ -24,3 +24,4 @@ set smartcase
 set cursorline
 colorscheme Tomorrow-Night-Bright
 set foldmethod=syntax
+set t_Co=256
