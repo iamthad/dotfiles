@@ -1,6 +1,0 @@
-alias ls='ls --color=auto'
-srun1() { srun -A TACC-PCSE -p development -t 01:00:00 -n16 --pty /bin/bash -l; }
-srun1_w() { srun -A A-aoag -p development -t 01:00:00 -n16 --pty /bin/bash -l; }
-idev()  { srun -A TACC-PCSE -p development -t 01:00:00 -n16 --pty /bin/bash -l; }
-srun2() { srun -A TACC-PCSE -p development -t 02:00:00 -n16 --pty /bin/bash -l; }
-idev2() { srun -A TACC-PCSE -p development -t 02:00:00 -n16 --pty /bin/bash -l; }
