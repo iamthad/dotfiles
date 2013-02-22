@@ -14,6 +14,7 @@ syntax enable
 set expandtab
 set smarttab
 set autoindent
+set hlsearch
 set incsearch
 set virtualedit=onemore
 set shiftwidth=2
