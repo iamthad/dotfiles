@@ -1,3 +1,4 @@
+alias dfgit="git --work-tree=$HOME --git-dir=$HOME/.dfgit"
 if [ -s .liquidprompt/liquidprompt ]; then
   . .liquidprompt/liquidprompt
 else
