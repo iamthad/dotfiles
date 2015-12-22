@@ -1,0 +1,5 @@
+[user]
+	email = thadeus.fleming@fireflyspace.com
+	name = Thadeus Fleming
+[core]
+	editor = emacsclient -nc
