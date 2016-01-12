@@ -1,5 +1,9 @@
 [user]
 	email = thadeus.fleming@fireflyspace.com
 	name = Thadeus Fleming
+[color]
+	ui = true
 [core]
-	editor = emacsclient -nc
+	editor = emacsclient -a "" -nc
+[status]
+	submoduleSummary = true
