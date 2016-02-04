@@ -23,7 +23,7 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
+     auto-completion
      better-defaults
      emacs-lisp
      ;; python
@@ -179,7 +179,7 @@ values."
    dotspacemacs-highlight-delimiters 'all
    ;; If non nil advises quit functions to keep server open when quitting.
    ;; (default nil)
-   dotspacemacs-persistent-server t
+   dotspacemacs-persistent-server nil
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
@@ -200,8 +200,19 @@ user code."
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-  (global-linum-mode)
-)
+
+  (defconst my-cc-style
+    '("stroustrup"
+      (c-offsets-alist . ((innamespace . [0])))))
+  (c-add-style "my-cc-mode" my-cc-style)
+
+  (setq
+   python-shell-interpreter "C:\\Anaconda2\\python.exe"
+   python-shell-interpreter-args "-i C:\\Anaconda2\\Scripts\\ipython-script.py"
+   c-default-style '((java-mode . "java")
+                     (awk-mode . "awk")
+                     (other . "my-cc-mode")))
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
