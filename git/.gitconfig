@@ -7,3 +7,5 @@
 	editor = emacsclient -a "" -nc
 [status]
 	submoduleSummary = true
+[push]
+	default = simple
