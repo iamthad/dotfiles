@@ -79,5 +79,22 @@
 URxvt.scrollBar: false
 URxvt.secondaryScreen: 1
 
+URxvt.font: xft:Input Mono:style=Light:pixelsize=11:antialias=true
+URxvt.boldFont: xft:Input Mono:style=Medium:pixelsize=11:antialias=true
+
+
+
+
+!! Xft antialiasing
+Xft.dpi:       96
+Xft.antialias: 1
+!! There is apparently a bug causing urxvt to put too much space between letters with subpixel rendering enabled
+!! Xft.rgba:      rgb
+Xft.rgba:      none
+Xft.hinting:   1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+!! URxvt.secondaryScroll: 0
+
 
 
