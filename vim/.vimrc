@@ -23,6 +23,7 @@ set number
 set ignorecase
 set smartcase
 set cursorline
+set background=light
 colorscheme solarized
 set foldmethod=syntax
 " set t_Co=256
