@@ -9,12 +9,13 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+#set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:Input Mono 11
+font pango:Input Mono 11px
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
@@ -144,8 +145,33 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+# Color config
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    colors {
+           focused_background #eee8d5 
+           background #fdf6e3 
+           focused_statusline #657b83
+           statusline #93a1a1
+           # class            border  backgr. text
+           focused_workspace  #657e83 #eee8d5 #657b83
+           active_workspace   #657b83 #eee8d5 #93a1a1
+           inactive_workspace #93a1a1 #fdf6e3 #93a1a1
+           urgent_workspace   #586e75 #dc322f #586e75
+    }
+    font pango:Input Mono Bold 11px
         status_command i3status
 }
+#fdf6e3 
+# class                 border  backgr. text    indicator child_border
+client.focused          #657e83 #eee8d5 #657e83 #586e75   #657b83
+client.focused_inactive #93a1a1 #eee8d5 #93a1a1 #657e83   #93a1a1
+client.unfocused        #eee8d5 #fdf6e3 #93a1a1 #292d2e   #eee8d5
+client.urgent           #dc322f #eee8d5 #586e75 #dc322f   #dc322f
+client.placeholder      #eee8d5 #fdf6e3 #93a1a1 #292d2e   #eee8d5
+
+
+client.background       #eee8d5
