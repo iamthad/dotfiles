@@ -206,12 +206,13 @@ layers configuration. You are free to put any user code."
       (c-offsets-alist . ((innamespace . [0])))))
   (c-add-style "my-cc-mode" my-cc-style)
 
-  (setq
-   python-shell-interpreter "C:\\Anaconda2\\python.exe"
-   python-shell-interpreter-args "-i C:\\Anaconda2\\Scripts\\ipython-script.py"
-   c-default-style '((java-mode . "java")
-                     (awk-mode . "awk")
-                     (other . "my-cc-mode")))
+  (setq tramp-default-method "ssh")
+  ;(setq
+  ; python-shell-interpreter "C:\\Anaconda2\\python.exe"
+  ; python-shell-interpreter-args "-i C:\\Anaconda2\\Scripts\\ipython-script.py"
+  ; c-default-style '((java-mode . "java")
+  ;                   (awk-mode . "awk")
+  ;                   (other . "my-cc-mode")))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
