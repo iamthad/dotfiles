@@ -78,6 +78,7 @@
 
 URxvt.scrollBar: false
 URxvt.secondaryScreen: 1
+URxvt.buffered: true
 
 URxvt.font: xft:Input Mono:style=Light:pixelsize=11:antialias=true
 URxvt.boldFont: xft:Input Mono:style=Medium:pixelsize=11:antialias=true
