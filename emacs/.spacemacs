@@ -24,11 +24,12 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
-     better-defaults
+     ;; better-defaults
      emacs-lisp
      ;; python
      git
      c-c++
+     latex
      ;; markdown
      ;; org
      (shell :variables
