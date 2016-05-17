@@ -17,7 +17,7 @@ values."
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
-   '(
+   `(
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -31,11 +31,12 @@ values."
      c-c++
      latex
      ;; markdown
-     ;; org
+     org
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
-     ;; spell-checking
+     ;; Spell-checking doesn't work well on Windows
+     ,(if (eq system-type 'windows-nt) nil 'spell-checking)
      syntax-checking
      ;; version-control
      )
