@@ -109,7 +109,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Input Mono"
+   dotspacemacs-default-font `(,(if (eq system-type 'windows-nt) "InputMono" "Input Mono") ;; On Windows, the font name is screwed up
                                :size 11
                                :weight normal
                                :width normal
