@@ -261,8 +261,11 @@ you should place your code here."
   (setq-default c-basic-offset 4)
 
   (setq tramp-default-method "ssh")
+
+  ;; Classify Trick sim-modules as c++-mode files
   (add-to-list 'auto-mode-alist '("\\.sm\\'" . c++-mode))
   (add-to-list 'auto-mode-alist '("S_define\\'" . c++-mode))
+
   ;(setq
   ; python-shell-interpreter "C:\\Anaconda2\\python.exe"
   ; python-shell-interpreter-args "-i C:\\Anaconda2\\Scripts\\ipython-script.py"
