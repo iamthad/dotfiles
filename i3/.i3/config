@@ -157,7 +157,7 @@ bar {
            focused_statusline #657b83
            statusline #93a1a1
            # class            border  backgr. text
-           focused_workspace  #657e83 #eee8d5 #657b83
+           focused_workspace  #657b83 #eee8d5 #657b83
            active_workspace   #657b83 #eee8d5 #93a1a1
            inactive_workspace #93a1a1 #fdf6e3 #93a1a1
            urgent_workspace   #586e75 #dc322f #586e75
@@ -167,11 +167,11 @@ bar {
 }
 #fdf6e3 
 # class                 border  backgr. text    indicator child_border
-client.focused          #657e83 #eee8d5 #657e83 #586e75   #657b83
-client.focused_inactive #93a1a1 #eee8d5 #93a1a1 #657e83   #93a1a1
-client.unfocused        #eee8d5 #fdf6e3 #93a1a1 #292d2e   #eee8d5
+client.focused          #657b83 #eee8d5 #657b83 #586e75   #657b83
+client.focused_inactive #93a1a1 #eee8d5 #93a1a1 #657b83   #93a1a1
+client.unfocused        #eee8d5 #fdf6e3 #93a1a1 #268bd2   #eee8d5
 client.urgent           #dc322f #eee8d5 #586e75 #dc322f   #dc322f
-client.placeholder      #eee8d5 #fdf6e3 #93a1a1 #292d2e   #eee8d5
+client.placeholder      #eee8d5 #fdf6e3 #93a1a1 #268bd2   #eee8d5
 
 
 client.background       #eee8d5
