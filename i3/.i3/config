@@ -148,30 +148,45 @@ bindsym $mod+r mode "resize"
 
 # Color config
 
+set $base00 #fdf6e3
+set $base01 #eee8d5
+set $base02 #93a1a1
+set $base03 #839496
+set $base04 #657b83
+set $base05 #586e75
+set $base06 #073642
+set $base07 #002b36
+set $base08 #dc322f
+set $base09 #cb4b16
+set $base0A #b58900
+set $base0B #859900
+set $base0C #2aa198
+set $base0D #268bd2
+set $base0E #6c71c4
+set $base0F #d33682
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
     colors {
-           focused_background #eee8d5 
-           background #fdf6e3 
-           focused_statusline #657b83
-           statusline #93a1a1
+           focused_background $base01
+           background $base00
+           focused_statusline $base04
+           statusline $base02
            # class            border  backgr. text
-           focused_workspace  #657b83 #eee8d5 #657b83
-           active_workspace   #657b83 #eee8d5 #93a1a1
-           inactive_workspace #93a1a1 #fdf6e3 #93a1a1
-           urgent_workspace   #586e75 #dc322f #586e75
+           focused_workspace  $base04 $base01 $base04
+           active_workspace   $base04 $base01 $base02
+           inactive_workspace $base02 $base00 $base02
+           urgent_workspace   $base05 $base08 $base05
     }
     font pango:Input Mono Bold 11px
         status_command i3status
 }
-#fdf6e3 
 # class                 border  backgr. text    indicator child_border
-client.focused          #657b83 #eee8d5 #657b83 #586e75   #657b83
-client.focused_inactive #93a1a1 #eee8d5 #93a1a1 #657b83   #93a1a1
-client.unfocused        #eee8d5 #fdf6e3 #93a1a1 #268bd2   #eee8d5
-client.urgent           #dc322f #eee8d5 #586e75 #dc322f   #dc322f
-client.placeholder      #eee8d5 #fdf6e3 #93a1a1 #268bd2   #eee8d5
+client.focused          $base04 $base01 $base04 $base05 $base04
+client.focused_inactive $base02 $base01 $base02 $base04 $base02
+client.unfocused        $base01 $base00 $base02 $base0C $base01
+client.urgent           $base08 $base01 $base05 $base08 $base08
+client.placeholder      $base01 $base00 $base02 $base0C $base01
 
-
-client.background       #eee8d5
+client.background       $base01
