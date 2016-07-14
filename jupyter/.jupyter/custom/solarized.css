@@ -28,23 +28,16 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 /* Color scheme for code-mirror */
 
 .cm-s-solarized {
-  line-height: 1.45em;
   color-profile: sRGB;
   rendering-intent: auto;
 }
 .cm-s-solarized.cm-s-dark {
   color: #839496;
   background-color: #002b36;
-  text-shadow: #002b36 0 1px;
 }
 .cm-s-solarized.cm-s-light {
   background-color: #fdf6e3;
   color: #657b83;
-  text-shadow: #eee8d5 0 1px;
-}
-
-.cm-s-solarized .CodeMirror-widget {
-  text-shadow: none;
 }
 
 .cm-s-solarized .cm-header { color: #586e75; }
@@ -103,20 +96,6 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 .cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection, .cm-s-ligh .CodeMirror-line > span::-moz-selection, .cm-s-ligh .CodeMirror-line > span > span::-moz-selection { background: #eee8d5; }
 
 /* Editor styling */
-
-
-
-/* Little shadow on the view-port of the buffer view */
-.cm-s-solarized.CodeMirror {
-  -moz-box-shadow: inset 7px 0 12px -6px #000;
-  -webkit-box-shadow: inset 7px 0 12px -6px #000;
-  box-shadow: inset 7px 0 12px -6px #000;
-}
-
-/* Remove gutter border */
-.cm-s-solarized .CodeMirror-gutters {
-  border-right: 0;
-}
 
 /* Gutter colors and line number styling based of color scheme (dark / light) */
 
