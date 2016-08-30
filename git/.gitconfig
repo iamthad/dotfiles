@@ -1,6 +1,3 @@
-[user]
-	email = thadeus.fleming@fireflyspace.com
-	name = Thadeus Fleming
 [color]
 	ui = true
 [core]
@@ -9,3 +6,5 @@
 	submoduleSummary = true
 [push]
 	default = simple
+[include]
+	path = "~/.gitconfig_local"
