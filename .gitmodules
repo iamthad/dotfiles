@@ -7,3 +7,6 @@
 [submodule "mintty/mintty-colors-solarized"]
 	path = mintty/mintty-colors-solarized
 	url = https://github.com/mavnn/mintty-colors-solarized
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
