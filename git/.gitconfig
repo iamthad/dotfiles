@@ -6,5 +6,6 @@
 	submoduleSummary = true
 [push]
 	default = simple
+	recurseSubmodules = on-demand
 [include]
 	path = "~/.gitconfig_local"
