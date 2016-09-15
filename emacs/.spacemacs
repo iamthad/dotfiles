@@ -25,14 +25,15 @@ values."
      ;; ----------------------------------------------------------------
      auto-completion
      ;; better-defaults
-     emacs-lisp
-     python
-     git
      c-c++
+     emacs-lisp
+     git
+     javascript
      latex
      ;; markdown
      org
      puppet
+     python
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
