@@ -8,4 +8,4 @@
 	default = simple
 	recurseSubmodules = on-demand
 [include]
-	path = "~/.gitconfig_local"
+	path = "local_config"
