@@ -3,7 +3,7 @@
 [column]
 	ui = auto,dense
 [core]
-	editor = emacsclient -a "" -nc
+	editor = vim
 [diff]
 	algorithm = histogram
 	mnemonicPrefix = true
