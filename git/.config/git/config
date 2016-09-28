@@ -1,0 +1,8 @@
+[diff]
+	algorithm = histogram
+
+[push]
+	default = simple
+
+[include]
+	path = local_config
