@@ -24,5 +24,15 @@ set ignorecase
 set smartcase
 set cursorline
 colorscheme solarized
+
+" Auto-switch background
+" From http://benjamintan.io/blog/2014/04/10/switch-solarized-light-slash-dark-depending-on-the-time-of-day/
+let hour = strftime("%H")
+if 6 <= hour && hour < 18
+  set background=light
+else
+  set background=dark
+endif
+
 set foldmethod=syntax
 " set t_Co=256

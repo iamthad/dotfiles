@@ -1,9 +1,9 @@
 [submodule "emacs/.emacs.d"]
 	path = emacs/.emacs.d
-	url = https://github.com/syl20bnr/spacemacs.git
+	url = https://github.com/syl20bnr/spacemacs
 [submodule "npp/solarized"]
 	path = npp/solarized
-	url = https://github.com/walesmd/notepad-plus-plus-solarized.git
+	url = https://github.com/walesmd/notepad-plus-plus-solarized
 [submodule "mintty/mintty-colors-solarized"]
 	path = mintty/mintty-colors-solarized
 	url = https://github.com/mavnn/mintty-colors-solarized

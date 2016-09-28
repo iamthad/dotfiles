@@ -29,4 +29,5 @@
 
 # Include local (i.e. personal or proprietary) information
 [include]
-	path = "local_config"
+	path = local_config
+
