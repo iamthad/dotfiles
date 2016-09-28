@@ -1,11 +1,32 @@
 [color]
-	ui = true
+	ui = auto
+[column]
+	ui = auto,dense
 [core]
 	editor = emacsclient -a "" -nc
-[status]
-	submoduleSummary = true
+[diff]
+	algorithm = histogram
+	mnemonicPrefix = true
+[fetch]
+	prune = true
+[format]
+	pretty = short
+[interactive]
+	singleKey = true
+[log]
+	date = local
+	decorate = true
 [push]
 	default = simple
 	recurseSubmodules = on-demand
+[rebase]
+	autoSquash = true
+	missingCommitsCheck = warn
+[status]
+	submoduleSummary = true
+[user]
+	useConfigOnly = true # Don't guess username and email
+
+# Include local (i.e. personal or proprietary) information
 [include]
 	path = "local_config"
