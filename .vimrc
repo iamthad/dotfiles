@@ -1,6 +1,15 @@
 set nocompatible
 filetype on
 filetype plugin on
+filetype plugin indent on
+" Fortran stuff
+" If always using free source (never F77), can enable next line
+" But, now it is set to be more flexible using ftplugin
+" let fortran_free_source=1
+" Enable Fortran syntax folding
+let fortran_fold=1
+let fortran_fold_conditionals=1
+let fortran_fold_multilinecomments=1
 syntax enable
 set expandtab
 set smarttab
@@ -17,12 +26,3 @@ set cursorline
 colorscheme solarized
 set foldmethod=syntax
 " set t_Co=256
-filetype plugin indent on
-" Fortran stuff
-" If always using free source (never F77), can enable next line
-" But, now it is set to be more flexible using ftplugin
-" let fortran_free_source=1
-" Enable Fortran syntax folding
-let fortran_fold=1
-let fortran_fold_conditionals=1
-let fortran_fold_multilinecomments=1
