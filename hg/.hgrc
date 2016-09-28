@@ -1,0 +1,6 @@
+[ui]
+username = Thadeus Fleming <thadeus.j.fleming@utexas.edu>
+ssh = ssh -C
+
+[extensions]
+convert =

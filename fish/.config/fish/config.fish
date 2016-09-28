@@ -1,4 +1,4 @@
-if which direnv > /dev/null
+if (which direnv > /dev/null)
     eval (direnv hook fish)
 end
 switch (uname)
