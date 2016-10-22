@@ -47,6 +47,7 @@ values."
      git
      gnus
      html
+     imenu-list
      javascript
      latex
      markdown
