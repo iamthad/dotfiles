@@ -42,6 +42,8 @@ values."
      c-c++
      emacs-lisp
      evernote
+     (geolocation :variables
+                  geolocation-enable-automatic-theme-changer t)
      git
      gnus
      html
