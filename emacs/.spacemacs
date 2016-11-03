@@ -40,6 +40,7 @@ values."
      auto-completion
      ;; better-defaults
      c-c++
+     csv
      emacs-lisp
      evernote
      (geolocation :variables
@@ -51,6 +52,7 @@ values."
      javascript
      latex
      markdown
+     octave
      org
      puppet
      python
