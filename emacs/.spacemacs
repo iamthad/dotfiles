@@ -41,6 +41,7 @@ values."
      ;; better-defaults
      c-c++
      csv
+     dash
      emacs-lisp
      evernote
      (geolocation :variables
