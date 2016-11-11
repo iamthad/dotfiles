@@ -27,6 +27,11 @@
 [user]
 	useConfigOnly = true # Don't guess username and email
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+
 # Include local (i.e. personal or proprietary) information
 [include]
 	path = local_config
