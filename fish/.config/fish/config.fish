@@ -1,6 +1,11 @@
 if which direnv > /dev/null
     eval (direnv hook fish)
 end
+
+if which thefuck > /dev/null
+    eval (thefuck --alias | tr '\n' ';')
+end
+
 switch (uname)
     case Darwin
     # Mac-specific setup
