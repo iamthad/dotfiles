@@ -16,7 +16,10 @@
 	singleKey = true
 [log]
 	date = local
-	decorate = true
+	decorate = auto
+	follow = true
+[pull]
+	ff = only
 [push]
 	default = simple
 	recurseSubmodules = on-demand
@@ -25,8 +28,12 @@
 	missingCommitsCheck = warn
 [status]
 	submoduleSummary = true
+[submodule]
+	# Docs say "A value of 0 will give some reasonable default"
+	fetchJobs = 0
 [user]
-	useConfigOnly = true # Don't guess username and email
+	# Don't guess username and email
+	useConfigOnly = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
