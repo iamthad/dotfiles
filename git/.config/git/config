@@ -6,6 +6,7 @@
 	editor = vim
 [diff]
 	algorithm = histogram
+	compactionHeuristic = true
 	mnemonicPrefix = true
 [fetch]
 	prune = true
