@@ -56,7 +56,10 @@ values."
      octave
      org
      puppet
-     python
+     (python :variables
+             python-sort-imports-on-save t
+             python-enable-yapf-format-on-save t
+             )
      semantic
      (shell :variables
             shell-default-height 30
