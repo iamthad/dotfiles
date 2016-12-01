@@ -335,6 +335,7 @@ you should place your code here."
   ;; Classify Trick sim-modules as c++-mode files
   (add-to-list 'auto-mode-alist '("\\.sm\\'" . c++-mode))
   (add-to-list 'auto-mode-alist '("S_define\\'" . c++-mode))
+  (setq python-shell-completion-native-enable nil)
 
   ;(setq
   ; python-shell-interpreter "C:\\Anaconda2\\python.exe"
