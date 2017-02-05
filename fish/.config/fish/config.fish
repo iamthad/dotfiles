@@ -1,9 +1,9 @@
 if which direnv ^/dev/null >/dev/null
-    eval (direnv hook fish)
+    direnv hook fish | source
 end
 
 if which thefuck ^/dev/null >/dev/null
-    eval (thefuck --alias | tr '\n' ';')
+    thefuck --alias | source
 end
 
 switch (uname)
