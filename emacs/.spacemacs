@@ -69,7 +69,6 @@ values."
      syntax-checking
      ;; version-control
      vagrant
-     vim-empty-lines
      yaml
      )
    ;; List of additional packages that will be installed without being
