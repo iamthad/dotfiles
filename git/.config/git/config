@@ -1,3 +1,5 @@
+[apply]
+	whitespace = fix
 [color]
 	ui = auto
 [column]
@@ -18,6 +20,7 @@
 	date = local
 	decorate = auto
 	follow = true
+	mailmap = true
 [pull]
 	ff = only
 [push]
