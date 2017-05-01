@@ -1,3 +1,9 @@
+if not test -f ~/.config/fish/functions/fisher.fish
+    echo "Installing fisherman..."
+    curl -sLo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+    fisher
+end
+
 if which direnv ^/dev/null >/dev/null
     direnv hook fish | source
 end
