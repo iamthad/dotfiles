@@ -1,6 +1,7 @@
 [submodule "emacs/.emacs.d"]
 	path = emacs/.emacs.d
 	url = https://github.com/syl20bnr/spacemacs
+	branch = develop
 [submodule "npp/solarized"]
 	path = npp/solarized
 	url = https://github.com/walesmd/notepad-plus-plus-solarized
