@@ -4,6 +4,10 @@ if not test -f ~/.config/fish/functions/fisher.fish
     fisher
 end
 
+if test -f ~/perl5/lib/perl5/local/lib.pm
+    perl -I ~/perl5/lib/perl5 -Mlocal::lib | source
+end
+
 if which direnv ^/dev/null >/dev/null
     direnv hook fish | source
 end
