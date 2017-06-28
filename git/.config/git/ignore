@@ -1,4 +1,16 @@
-# From https://raw.githubusercontent.com/github/gitignore/master/Global/Archives.gitignore
+# -*- mode: gitignore; -*-
+
+.gdb_history
+
+# Fetch lines from some of Github’s standard gitignores
+# [[[cog
+# import requests
+# def getlines(url):
+#     cog.outl(requests.get(url).text)
+#
+# for name in ('Archives', 'Emacs', 'Linux', 'Tags', 'Vim', 'macOS'):
+#     getlines(f'https://raw.githubusercontent.com/github/gitignore/master/Global/{name}.gitignore')
+# ]]]
 # It's better to unpack these files and commit the raw source because
 # git has its own built in compression methods.
 *.7z
@@ -28,7 +40,7 @@
 *.msm
 *.msp
 
-# From https://raw.githubusercontent.com/github/gitignore/master/Global/Emacs.gitignore
+# -*- mode: gitignore; -*-
 *~
 \#*\#
 /.emacs.desktop
@@ -74,7 +86,6 @@ flycheck_*.el
 # directory configuration
 .dir-locals.el
 
-# From https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore
 *~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -89,7 +100,6 @@ flycheck_*.el
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-# From https://raw.githubusercontent.com/github/gitignore/master/Global/Tags.gitignore
 # Ignore tags created by etags, ctags, gtags (GNU global) and cscope
 TAGS
 .TAGS
@@ -107,7 +117,7 @@ cscope.out
 cscope.in.out
 cscope.po.out
 
-# From https://raw.githubusercontent.com/github/gitignore/master/Global/Vim.gitignore
+
 # Swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
@@ -123,14 +133,13 @@ Session.vim
 # Auto-generated tag files
 tags
 
-# From https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
 # General
 *.DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -150,3 +159,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# [[[end]]] (checksum: 27a1d4dab5054fb0f61a71b87a9c887e)
