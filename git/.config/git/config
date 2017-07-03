@@ -13,7 +13,7 @@
 [fetch]
 	prune = true
 [format]
-	pretty = short
+	pretty = medium
 [interactive]
 	singleKey = true
 [log]
