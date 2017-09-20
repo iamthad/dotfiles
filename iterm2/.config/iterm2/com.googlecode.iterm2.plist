@@ -644,7 +644,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InputMono-Regular 11</string>
+			<string>InputMono-Light 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -689,6 +689,8 @@
 			</array>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
@@ -696,7 +698,7 @@
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
