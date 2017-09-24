@@ -47,6 +47,7 @@ This function should only modify configuration layer settings."
                   geolocation-enable-automatic-theme-changer t)
      git
      gnus
+     graphviz
      html
      imenu-list
      javascript
@@ -54,6 +55,8 @@ This function should only modify configuration layer settings."
      markdown
      octave
      org
+     perl5
+     protobuf
      puppet
      (python :variables
              python-sort-imports-on-save t
