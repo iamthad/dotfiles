@@ -5,7 +5,11 @@ if not test -f ~/.config/fish/functions/fisher.fish
 end
 
 if test -f ~/perl5/lib/perl5/local/lib.pm
-    perl -I ~/perl5/lib/perl5 -Mlocal::lib | source
+    begin
+        # When logged in via ssh, starting fish doesn’t set $SHELL
+        set -lx SHELL (which fish)
+        perl -I ~/perl5/lib/perl5 -Mlocal::lib | source
+    end
 end
 
 if which direnv ^/dev/null >/dev/null
