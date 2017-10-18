@@ -27,12 +27,6 @@ padding:
   x: 2
   y: 2
 
-# The FreeType rasterizer needs to know the device DPI for best results
-# (changes require restart)
-dpi:
-  x: 96.0
-  y: 96.0
-
 # Display tabs using this many cells (changes require restart)
 tabspaces: 8
 
@@ -40,6 +34,24 @@ tabspaces: 8
 draw_bold_text_with_bright_colors: false
 
 # Font configuration (changes require restart)
+#
+# Important font attributes like antialiasing, subpixel aa, and hinting can be
+# controlled through fontconfig. Specifically, the following attributes should
+# have an effect:
+#
+# * hintstyle
+# * antialias
+# * lcdfilter
+# * rgba
+#
+# For instance, if you wish to disable subpixel antialiasing, you might set the
+# rgba property to "none". If you wish to completely disable antialiasing, you
+# can set antialias to false.
+#
+# Please see these resources for more information on how to use fontconfig
+#
+# * https://wiki.archlinux.org/index.php/font_configuration#Fontconfig_configuration
+# * file:///usr/share/doc/fontconfig/fontconfig-user.html
 font:
   # The normal (roman) font face to use.
   normal:
@@ -60,7 +72,7 @@ font:
     style: Italic
 
   # Point size of the font
-  size: 11.0
+  size: 10.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -94,6 +106,11 @@ colors:
     background: '0xfdf6e3'
     foreground: '0x586e75'
 
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  # cursor:
+  #   text: '0x000000'
+  #   cursor: '0xffffff'
+
   # Normal colors
   normal:
     black:   '0x073642'
@@ -115,6 +132,17 @@ colors:
     magenta: '0x6c71c4'
     cyan:    '0x93a1a1'
     white:   '0xfdf6e3'
+
+  # Dim colors (Optional)
+  # dim:
+  #   black:   '0x333333'
+  #   red:     '0xf2777a'
+  #   green:   '0x99cc99'
+  #   yellow:  '0xffcc66'
+  #   blue:    '0x6699cc'
+  #   magenta: '0xcc99cc'
+  #   cyan:    '0x66cccc'
+  #   white:   '0xdddddd'
 
 # Visual Bell
 #
@@ -187,6 +215,9 @@ key_bindings:
   - { key: Q,        mods: Command, action: Quit                         }
   - { key: W,        mods: Command, action: Quit                         }
   - { key: Insert,   mods: Shift,   action: PasteSelection               }
+  - { key: Key0,     mods: Control, action: ResetFontSize                }
+  - { key: Equals,   mods: Control, action: IncreaseFontSize             }
+  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }
   - { key: End,                     chars: "\x1bOF",   mode: AppCursor   }
