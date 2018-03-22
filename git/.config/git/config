@@ -9,7 +9,7 @@
 [column]
 	ui = auto,dense
 [core]
-	editor = vim
+	editor = emacsclient -a "" -n -c
 [diff]
 	algorithm = histogram
 	compactionHeuristic = true
