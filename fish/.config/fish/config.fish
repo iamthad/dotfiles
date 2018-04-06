@@ -4,7 +4,14 @@ test -z "$XDG_CONFIG_HOME"; and set -Ux XDG_CONFIG_HOME "$HOME"/.config
 test -z "$XDG_DATA_HOME"; and set -Ux XDG_DATA_HOME "$HOME"/.local/share
 
 # Set some XDG compliance workarounds
+test -z "$CARGO_HOME"; and set -Ux CARGO_HOME "$XDG_DATA_HOME"/cargo
 test -z "$CCACHE_DIR"; and set -Ux CCACHE_DIR "$XDG_CACHE_HOME"/ccache
+test -z "$GEM_HOME"; and set -Ux GEM_HOME "$XDG_DATA_HOME"/gem
+test -z "$GEM_SPEC_CACHE"; and set -Ux GEM_SPEC_CACHE "$XDG_CACHE_HOME"/gem/specs
+test -z "$INPUTRC"; and set -Ux INPUTRC "$XDG_CONFIG_HOME"/readline/inputrc
+test -z "$RBENV_ROOT"; and set -Ux RBENV_ROOT "$XDG_DATA_HOME"/rbenv
+test -z "$RUSTUP_HOME"; and set -Ux RUSTUP_HOME "$XDG_DATA_HOME"/rustup
+test -z "$TMUX_TMPDIR"; and set -Ux TMUX_TMPDIR "$XDG_RUNTIME_DIR"
 
 if not test -f ~/.config/fish/functions/fisher.fish
     echo "Installing fisherman..."
