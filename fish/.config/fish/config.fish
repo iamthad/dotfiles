@@ -1,3 +1,4 @@
+
 # Set XDG base directories if unset
 test -z "$XDG_CACHE_HOME"; and set -Ux XDG_CACHE_HOME "$HOME"/.cache
 test -z "$XDG_CONFIG_HOME"; and set -Ux XDG_CONFIG_HOME "$HOME"/.config
@@ -12,6 +13,21 @@ test -z "$INPUTRC"; and set -Ux INPUTRC "$XDG_CONFIG_HOME"/readline/inputrc
 test -z "$RBENV_ROOT"; and set -Ux RBENV_ROOT "$XDG_DATA_HOME"/rbenv
 test -z "$RUSTUP_HOME"; and set -Ux RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 test -z "$TMUX_TMPDIR"; and set -Ux TMUX_TMPDIR "$XDG_RUNTIME_DIR"
+
+# MOTD
+function echo_color
+  # printf "\033[0;90m$argv[1]\033[0m\n"
+  printf "\033[2m$argv[1]\033[22m\n"
+end
+if status --is-interactive
+    echo_color "┏━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    echo_color "┃ ⌃f │ Move forward                  ┃ ⌃b │ Move backward                    ┃"
+    echo_color "┃ ⌃p │ Move up                       ┃ ⌃n │ Move down                        ┃"
+    echo_color "┃ ⌃a │ Jump to beginning of line     ┃ ⌃e │ Jump to end of line              ┃"
+    echo_color "┃ ⌃d │ Delete forward                ┃ ⌃h │ Delete backward                  ┃"
+    echo_color "┃ ⌃k │ Delete forward to end of line ┃ ⌃u │ Delete backward to start of line ┃"
+    echo_color "┗━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+end
 
 if not test -f ~/.config/fish/functions/fisher.fish
     echo "Installing fisherman..."
