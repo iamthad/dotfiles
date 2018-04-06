@@ -1,3 +1,11 @@
+# Set XDG base directories if unset
+test -z "$XDG_CACHE_HOME"; and set -Ux XDG_CACHE_HOME "$HOME"/.cache
+test -z "$XDG_CONFIG_HOME"; and set -Ux XDG_CONFIG_HOME "$HOME"/.config
+test -z "$XDG_DATA_HOME"; and set -Ux XDG_DATA_HOME "$HOME"/.local/share
+
+# Set some XDG compliance workarounds
+test -z "$CCACHE_DIR"; and set -Ux CCACHE_DIR "$XDG_CACHE_HOME"/ccache
+
 if not test -f ~/.config/fish/functions/fisher.fish
     echo "Installing fisherman..."
     curl -sLo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
