@@ -1,0 +1,10 @@
+{
+    "editor.fontFamily": "'Input Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.colorTheme": "Spacemacs - light",
+    "terminal.integrated.fontWeight": "300",
+    "files.associations": {},
+    "files.trimTrailingWhitespace": true,
+    "editor.fontSize": 13,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 13
+}
