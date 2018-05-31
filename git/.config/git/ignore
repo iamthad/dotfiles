@@ -8,7 +8,7 @@
 # def getlines(url):
 #     cog.outl(requests.get(url).text)
 #
-# for name in ('Archives', 'Emacs', 'Linux', 'Tags', 'Vim', 'macOS'):
+# for name in ('Archives', 'Emacs', 'Linux', 'Tags', 'Vim', 'VisualStudioCode', 'macOS'):
 #     getlines(f'https://raw.githubusercontent.com/github/gitignore/master/Global/{name}.gitignore')
 # ]]]
 # It's better to unpack these files and commit the raw source because
@@ -132,9 +132,17 @@ Session.vim
 *~
 # Auto-generated tag files
 tags
+# Persistent undo
+[._]*.un~
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # General
-*.DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -160,4 +168,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# [[[end]]] (checksum: 27a1d4dab5054fb0f61a71b87a9c887e)
+# [[[end]]] (checksum: b60b63ec54ea387817f88c557a1d34d5)
