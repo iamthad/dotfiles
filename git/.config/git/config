@@ -1,7 +1,6 @@
 [alias]
 	glom = commit --amend --no-edit
 	pushall = !git remote | parallel git push {}
-	root = !cd $(git rev-parse --show-toplevel)
 
 [apply]
 	whitespace = fix
