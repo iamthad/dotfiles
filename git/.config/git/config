@@ -2,50 +2,63 @@
 	glom = commit --amend --no-edit
 	pushall = !git remote | parallel git push {}
 	root = !cd $(git rev-parse --show-toplevel)
+
 [apply]
 	whitespace = fix
+
 [color]
 	ui = auto
+
 [column]
 	ui = auto,dense
-[core]
-	editor = emacsclient -a "" -c
+
 [diff]
 	algorithm = histogram
 	compactionHeuristic = true
 	mnemonicPrefix = true
+
 [fetch]
 	prune = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
 [format]
 	pretty = medium
+
 [interactive]
 	singleKey = true
+
 [log]
 	date = local
 	decorate = auto
 	follow = true
 	mailmap = true
+
 [pull]
 	ff = only
+
 [push]
 	default = simple
 	recurseSubmodules = on-demand
+
 [rebase]
 	autoSquash = true
 	missingCommitsCheck = warn
+
 [status]
 	submoduleSummary = true
+
 [submodule]
 	# Docs say "A value of 0 will give some reasonable default"
 	fetchJobs = 0
+
 [user]
 	# Don't guess username and email
 	useConfigOnly = true
-
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
 
 # Include local (i.e. personal or proprietary) information
 [include]
