@@ -12,5 +12,5 @@
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 [submodule "vim/.SpaceVim"]
-	path = vim/.SpaceVim
+	path = spacevim/.SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim
