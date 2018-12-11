@@ -15,3 +15,11 @@ HISTCONTROL=ignorespace:erasedups
 HISTSIZE=4096
 HISTFILESIZE=16384
 HISTTIMEFORMAT="%FT%T%z "
+
+
+# Enable direnv if present
+set -h -- "-${-:--}" "$@"
+if hash direnv 2>/dev/null; then
+    eval "$(direnv hook bash)"
+fi
+set +h "$@"
