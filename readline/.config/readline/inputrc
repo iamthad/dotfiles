@@ -1,0 +1,9 @@
+$include /etc/inputrc
+
+set colored-completion-prefix On
+set colored-stats On
+set show-all-if-ambiguous On
+set skip-completed-text On
+
+"\e[B": history-search-forward
+"\e[A": history-search-backward
