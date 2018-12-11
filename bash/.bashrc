@@ -1,4 +1,6 @@
-# Source local bashrc if it exists
-if [ -s .bashrc_local ]; then
-  . .bashrc_local
-fi
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
