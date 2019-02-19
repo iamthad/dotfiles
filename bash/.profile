@@ -23,3 +23,5 @@ export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 export RBENV_ROOT="$XDG_DATA_HOME"/rbenv
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+
+[ -d "$CARGO_HOME/bin" ] && export PATH="$CARGO_HOME/bin:$PATH"
