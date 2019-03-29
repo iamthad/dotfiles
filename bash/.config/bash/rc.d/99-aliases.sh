@@ -1,4 +1,8 @@
-alias ls='ls --color=auto'
+if ls --color=auto /dev/null >/dev/null 2>&1 ; then
+    alias ls='ls --color=auto'
+elif ls -G /dev/null >/dev/null 2>&1 ; then
+    alias ls='ls -G'
+fi
 alias la='ls -A'
 
 alias grep='grep --color=auto'
