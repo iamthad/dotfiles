@@ -1,4 +1,6 @@
-if ls --color=auto /dev/null >/dev/null 2>&1 ; then
+# shellcheck shell=bash
+# Aliases
+
     alias ls='ls --color=auto'
 elif ls -G /dev/null >/dev/null 2>&1 ; then
     alias ls='ls -G'

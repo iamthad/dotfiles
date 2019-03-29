@@ -1,4 +1,6 @@
+# shellcheck shell=bash
 # History options
+
 shopt -s cmdhist
 shopt -s histappend
 shopt -s lithist
