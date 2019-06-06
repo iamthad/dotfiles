@@ -1,6 +1,4 @@
-#
-# ~/.profile
-#
+# shellcheck shell=sh
 
 [ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH"
 
