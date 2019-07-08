@@ -11,4 +11,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias gdb='gdb -nh -x $HOME/.config/gdb/init'
+if always_hash gdb 2>/dev/null; then
+    alias gdb='gdb -nh -x $HOME/.config/gdb/init'
+fi
