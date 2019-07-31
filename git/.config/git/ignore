@@ -1,6 +1,7 @@
 # -*- mode: gitignore; -*-
 
 .gdb_history
+.envrc
 
 # Fetch lines from some of Github’s standard gitignores
 # [[[cog
